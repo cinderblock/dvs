@@ -20,6 +20,12 @@
     "level": "^0.18.0",
     "md5-file": "^1.1.10",
     "pem": "^1.7.2",
-    "pm2": "^0.12.12"
-  }
+    "pm2": "^0.12.12",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
